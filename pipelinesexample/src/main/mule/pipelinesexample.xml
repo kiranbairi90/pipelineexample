@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="pipelinesexampleFlow" doc:id="823cbf65-3511-429e-9e41-c29c5cd01815" >
 		<http:listener doc:name="Listener" doc:id="f67e981d-bc16-418f-9133-25487e984c03" config-ref="HTTP_Listener_config" path="/pipelines"/>
-		<logger level="INFO" doc:name="Logger" doc:id="bd4605fd-674b-4f09-9805-e1267252eca4" message="started"/>
+		<logger level="INFO" doc:name="Logger" doc:id="bd4605fd-674b-4f09-9805-e1267252eca4" message="started process"/>
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="0059f222-3b92-480b-93c4-e70bfa7b742d" />
 	</flow>
 </mule>
